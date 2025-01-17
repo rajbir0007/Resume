@@ -1,3 +1,441 @@
----
-layout: resume
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rajbir Singh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rajbir Singh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Rajbir's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 heading">Hello, I'm</p>
+        <h1 class="title">Rajbir</h1>
+        <p class="section__text__p2 heading">QA Engineer</p>
+        <p>Welcome to my page! I’m glad you stopped by.</p>
+        <br />
+        <p>
+          I created this page to provide you with a clear understanding of my
+          contributions to past projects. Feel free to navigate through the
+          different sections to get a deeper look at my expertise.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Natalia_Bagramian_QA_Engineer.pdf')"
+          >
+            Download Resume
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('https://github.com/Rajbirbag')"
+          >
+            Visit GitHub
+          </button>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Here Is Some Information</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>ISTQB Certified</h3>
+              <p>QA Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <div class="text-about">
+              <p>
+                Bilingual QA Engineer with banking and teaching background. In
+                every role I have performed, I have felt a burning desire to
+                improve the systems and processes I used. I noticed even the
+                smallest flaws and friction points, which escaped the notice of
+                most people. During my career exploration, I learned about QA. I
+                realized I was made for this!
+              </p>
+              <p>
+                Now I am proficient in designing and executing comprehensive
+                test cases, and skilled at identifying and documenting software
+                defects using a wide range of tools and techniques. With a
+                commitment to continuous improvement and a passion for learning,
+                I am excited to contribute effectively to your QA team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-content">
+        <div class="experience-details-container">
+          <div class="details-container">
+            <h2>Technical Skills</h2>
+            <div class="inline-section">
+              <h3>Languages</h3>
+              <p>JavaScript, Python, TypeScript, HTML, CSS, SQL</p>
+            </div>
+            <div class="inline-section">
+              <h3>Test Automation</h3>
+              <p>Playwright, Selenium WebDriver, WebdriverIO, Pytest, Jest, Mocha</p>
+            </div>
+            <div class="inline-section">
+              <h3>Developer Tools</h3>
+              <p>Git, GitHub, Chrome DevTools, Visual Studio Code, PyCharm</p>
+            </div>
+            <div class="inline-section">
+              <h3>Testing Tools</h3>
+              <p>Postman, Jira, Android Studio, Charles Proxy, DrivT, JMeter</p>
+            </div>
+            <div class="inline-section">
+              <h3>Types of Testing</h3>
+              <p>UI Testing, API Testing, Smoke Testing, Regression Testing, Exploratory Testing, Test Automation, Manual Testing, etc.</p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2>Currently Working</h2>
+            <div class="inline-section">
+              <h3>Freelance Tester, QA Project Lead - uTest, SQA </h3>
+              <div class="experience-content">
+                <div class="experience-item">
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <p>
+                    Led a testing project of 9 members for a security application; optimized workflows and increased test coverage
+                  </p>
+                </div>
+                <div class="experience-item">
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <p>
+                    Conducted functional, end-to-end, regression, and smoke testing of desktop, web and mobile applications in combination with browser extension 
+                  </p>
+                </div>
+                <div class="experience-item">
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <p>
+                    Reported critical defects ensuring software met end-user needs; achieved 100% defect approval on uTest
+                  </p>
+                </div>
+                <div class="inline-section">
+                  <h3>QA Analyst - Oppia Foundation</h3>
+                  <div class="experience-content">
+                    <div class="experience-item">
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <p>
+                        Identified and reported critical issues; improved software stability and user experience
+                      </p>
+                    </div>
+                    <div class="experience-item">
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <p>
+                        Performed cross-browser testing across multiple devices; ensured high quality of learning platform
+                      </p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">See My Recent</p>
+      <h1 class="title">Test Automation Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Swag Labs</h2>
+            <p class="project-description">Selenium WebDriver</p>
+            <p class="project-description">Python, Pytest</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Rajbirbag/SwagLabs')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Luma Store</h2>
+            <p class="project-description">Selenium WebDriver</p>
+            <p class="project-description">Python, Pytest</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Rajbirbag/Luma_Selenium_Python')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Urban Routes</h2>
+            <p class="project-description">WebDriverIO</p>
+            <p class="project-description">JavaScript, Mocha</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Rajbirbag/Urban-Routes-Web-App')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#manual-projects'"
+      />
+    </section>
+    <section id="manual-projects">
+      <p class="section__text__p1">I am Happy To Share</p>
+      <h1 class="title">Manual Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Urban Scooter Web, Mobile, API
+            </h2>
+            <p class="project-description">
+              Wrote and executed 200+ tests; assured integration and performance
+              across mobile app, database, and website
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Emulated mobile devices in Android Studio and identified critical
+              defects in the mobile app
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Demonstrated expertise in SQL and command line; verified seamless
+              backend functionality
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Urban Grocers Web App API
+            </h2>
+            <p class="project-description">
+              Created from scratch 140+ test scenarios to ensure thorough test
+              coverage and product reliability
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Identified and documented 45+ critical API defects using Postman,
+              leading to improved functionality
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Urban Lunch Mobile App
+            </h2>
+            <p class="project-description">
+              Crafted an exhaustive testing checklist utilizing app
+              documentation; evaluated software functionality
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Emulated mobile devices in Android Studio and identified critical
+              defects in the mobile app
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:natalia.bagramian@gmail.com"
+              >natalia.bagramian@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/natalia-bagramian"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-two.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#desktop-nav'"
+      />
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
