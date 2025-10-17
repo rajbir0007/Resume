@@ -164,6 +164,7 @@ section {
   display: flex;
   height: 400px;
   width: 400px;
+  border-radius: 50%;
   margin: auto 0;
 }
 
@@ -305,7 +306,10 @@ section {
 #profile {
   position: relative;
 }
-
+.profile-pic {
+  border: 3px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 /* EXPERIENCE SECTION */
 
 #experience {
